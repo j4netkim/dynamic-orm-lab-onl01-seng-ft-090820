@@ -23,5 +23,7 @@ class Student < InteractiveRecord
   end
 
 
+  def initialize
+  end
 
 end
