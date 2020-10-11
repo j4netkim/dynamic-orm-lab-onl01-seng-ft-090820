@@ -67,7 +67,4 @@ class InteractiveRecord
     sql = "SELECT * FROM #{self.table_name} WHERE #{key} = ?"
     DB[:conn].execute(sql, value)
   end
-
-    formatted_value = value.class ==
-  end
 end
