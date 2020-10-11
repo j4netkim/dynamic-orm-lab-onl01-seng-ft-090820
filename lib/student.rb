@@ -23,7 +23,7 @@ class Student < InteractiveRecord
   end
 
 
-  def initialize
+  def initialize(options = {})
   end
 
 end
