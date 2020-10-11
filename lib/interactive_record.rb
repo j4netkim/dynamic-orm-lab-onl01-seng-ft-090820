@@ -61,6 +61,13 @@ class InteractiveRecord
   end
 
 
-  def self.find_by()
+  def self.find_by(attr_hash)
+    key = attr_hash.keys.first
+    value = attr_hash.values.first
+    sql = "SELECT * FROM #{self.table_name} WHERE #{key} = ?"
+    DB[:conn].execute(sql, value)
+  end
+
+    formatted_value = value.class ==
   end
 end
