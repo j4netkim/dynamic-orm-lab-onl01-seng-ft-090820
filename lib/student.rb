@@ -9,7 +9,7 @@ class Student < InteractiveRecord
   end
 
   def self.column_names
-    sql = 
+    sql = "PRAGMA table_info(<table name>)"
   end
 
 end
