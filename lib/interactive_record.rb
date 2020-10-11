@@ -29,7 +29,8 @@ class InteractiveRecord
   end
 
 
-  def 
+  def table_name_for_insert
+    self.class.table_name
   end
 
 end
